@@ -66,9 +66,11 @@ int main()
         printf("\nThe remainder is:");
         k=0;
         for(i=0;i<dil-1;i++)
-            printf("%d",remd[i]);
-        if(remd[k]==0)
+        {
+		 printf("%d",remd[i]);
+         if(remd[i]==0)
             k++;
+        }
     }
     if(k==dil-1)
           printf("\n no error found");
